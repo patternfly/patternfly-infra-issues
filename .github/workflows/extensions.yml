@@ -14,3 +14,4 @@ jobs:
         with:
           project-url: https://github.com/orgs/patternfly/projects/12
           github-token: ${{ secrets.PF_ISSUES_PROJECT_SECRET }}
+          
