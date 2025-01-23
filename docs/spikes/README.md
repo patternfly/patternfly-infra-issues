@@ -5,8 +5,6 @@
 ### Top-level Summary
 Think of this like replacing a monolithic templating engine with microservices - while the system is still running. We're migrating from Handlebars to SvelteKit, but instead of a risky big-bang migration, we're taking the strangler fig pattern approach. The old system keeps running while we gradually wrap new functionality around it.
 
-## Spikes
-
 # 2024.stateofjs.com
 
 ## Libraries Experience & Sentiment
@@ -217,3 +215,71 @@ render(name, context) {
    // 3. Update documentation
    // 4. Remove legacy template
    ```
+<hr />
+
+# Migration Analysis & Strategy
+
+## Overview
+The migration from Handlebars to Svelte focuses on automated conversion with zero downtime. Our approach leverages parallel systems and feature toggles, allowing gradual migration with minimal risk. The strategy prioritizes business continuity while modernizing our template system.
+
+## Compatibility Pattern
+A visual representation of how much of our current system can be automatically migrated to each framework option.
+
+```
+From Handlebars To:
+--------------------
+Svelte:  [==========--------] 60% automatible
+JSX:     [=======------------] 70% manual conversion
+Astro:   [========-----------] 80% partial reuse
+```
+
+## Migration Path Effort
+Comparison of effort required for each framework option, highlighting Svelte's advantages in automated conversion and parallel running systems.
+
+```
+Svelte Approach:
+--------------------
+1. Automated conversion     → 60% of templates
+2. Parallel systems        → Zero downtime
+3. Component-by-component  → Gradual rollout
+4. Feature toggles         → Instant rollback
+```
+
+## Automation Potential
+Overview of how Handlebars syntax patterns can be automatically converted to Svelte, demonstrating the straightforward mapping between the two systems.
+
+```
+Handlebars → Svelte Script:
+--------------------
+{{#if condition}}     →  {#if condition}
+{{content}}           →  {content}
+{{/if}}               →  {/if}
+```
+
+## Migration Script Concept
+A systematic approach to automating the conversion process while identifying areas requiring manual attention.
+
+```
+Migration Tool:
+--------------------
+1. Parse Handlebars templates
+2. Convert syntax patterns
+3. Generate Svelte components
+4. Maintain existing logic
+5. Create parallel structures
+6. Enable feature toggles
+
+Remaining Manual Work:
+--------------------
+1. Complex logic conversion
+2. State management updates
+3. Event handler adjustments
+4. Component optimization
+```
+
+Key Benefits:
+- Automated conversion reduces manual effort
+- Zero downtime maintains business continuity
+- Component-by-component migration minimizes risk
+- Feature toggles enable instant rollback
+- Parallel systems allow thorough testing
