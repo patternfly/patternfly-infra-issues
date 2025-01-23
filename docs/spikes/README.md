@@ -103,15 +103,26 @@ src/
 </div>
 
 // After: Svelte Component
+// Option A
 <!-- Alert.svelte -->
 <script>
-  export let modifier = '';
-  export let content = '';
+  let { text = '', children, ...props } = $props();
 </script>
 
-<div class="alert {modifier}">
+<div class="pfPrefix{className}">
   {content}
 </div>
+
+// Option B - Uses a preconfigured Component/Layout/Utility module
+// Build more for for edge cases
+
+<script>
+   import Component/Layout/Utility from '$componentTemplates';
+</script>
+
+<Component name="card">
+   content
+</Component>
 ```
 
 ## Implementation Strategy
