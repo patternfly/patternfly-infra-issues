@@ -215,7 +215,11 @@ render(name, context) {
    // 3. Update documentation
    // 4. Remove legacy template
    ```
-<hr />
+
+\pagebreak
+
+---
+---
 
 # Migration Analysis & Strategy
 
