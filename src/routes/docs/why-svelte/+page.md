@@ -4,6 +4,12 @@ title: Why Svelte
 
 # {title}
 
+<script>
+  import soj1 from '$images/soj1.png';
+  import soj2 from '$images/soj2.png';
+  import svelteLogo from '$images/svelte-logo.avif';
+</script>
+
 ## Template System Migration Guide: From Handlebars to SvelteKit
 
 ### Top-level Summary
@@ -13,14 +19,14 @@ Think of this like replacing a monolithic templating engine with microservices -
 
 ## Libraries Experience & Sentiment
 
-<a href="2024.stateofjs.com" target="_blank">
-<img src="https://github.com/user-attachments/assets/472ff0ee-f981-4901-9db3-a36054be64e3" alt="state of JS framework sentiment" />
+<a href="https://2024.stateofjs.com/en-US" target="_blank">
+<img src="{soj1}" alt="state of JS framework sentiment" />
 </a>
 
 ## Changes Over Time
 
-<a href="2024.stateofjs.com" target="_blank">
-<img src="https://github.com/user-attachments/assets/d9f1f791-fd40-4d75-a64e-1321715f95e5" alt="state of JS framework popularity" />
+<a href="https://2024.stateofjs.com/en-US" target="_blank">
+<img src="{soj2}" alt="state of JS framework popularity" />
 </a>
 
 ## The Migration Pattern
@@ -188,7 +194,7 @@ Key Benefits:
 - Parallel systems allow thorough testing
 
 
-<img src="./src/lib/images/svelte-logo.avif" alt="Svelte logo" />
+<img src="{svelteLogo}" alt="Svelte logo" />
 
 
 * Reactivity built-in: Automatically updates DOM when data changes, unlike Handlebars' manual re-renders

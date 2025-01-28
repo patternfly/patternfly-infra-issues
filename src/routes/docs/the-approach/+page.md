@@ -1,4 +1,4 @@
----
+<!-- ---
 title: A Clear Path Forward
 ---
 
@@ -45,7 +45,9 @@ Visual: Side-by-side comparison of old vs new workflow
 
 [Technical Solution]
 Title: Modern Build Process
+
 Code Example:
+```
 javascriptCopy// vite.config.js
 export default {
   build: {
@@ -53,6 +55,8 @@ export default {
     assetsInlineLimit: 4096
   }
 }
+```
+
 Visual: Architecture diagram showing simplified process
 
 [Implementation Timeline]
@@ -88,4 +92,4 @@ Title: Why Start Now
 Immediate productivity gains
 Better developer experience
 Future-proof architecture
-Visual: Impact graph showing benefits over time
+Visual: Impact graph showing benefits over time -->

@@ -1,15 +1,8 @@
 <script lang='ts'>
-  import { pfPrefix } from "../helpers";
-  let {
-    className = 'alert__title',
-    text = '',
-    children,
-    ...props
-  } = $props();
-
+  import Component from "$lib/modules/Component.svelte";
+  let { children, ...props } = $props();
 </script>
 
-<div class="{pfPrefix(className)}">
-  {text}
+<Component {...props} name="alert__title">
   {@render children?.()}
-</div>
+</Component>

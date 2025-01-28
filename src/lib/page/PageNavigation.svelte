@@ -2,7 +2,7 @@
   <ul class="pf-v6-c-nav__list">
     <li class="pf-v6-c-nav__item">
       <a href='/docs/' class="pf-v6-c-nav__link">
-        Documentation
+        Overview
       </a>
     </li>
 

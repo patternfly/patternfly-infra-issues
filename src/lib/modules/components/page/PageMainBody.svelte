@@ -1,15 +1,8 @@
 <script lang='ts'>
-  import { pfPrefix } from "../helpers";
-  let {
-    className = 'page__main-body',
-    text = '',
-    children,
-    ...props
-  } = $props();
+  import Component from "$lib/modules/Component.svelte";
+  let { children, ...props } = $props();
 </script>
 
-
-<div class="{pfPrefix(className)} pf-v6-c-markdown pf-v6-c-content">
-  {text}
+<Component {...props} name="page__main-body">
   {@render children?.()}
-</div>
+</Component>

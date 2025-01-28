@@ -1,14 +1,8 @@
 <script lang='ts'>
-  let {
-    className = 'card__title',
-    text = '',
-    children,
-    ...props
-  } = $props();
+  import Component from "$lib/modules/Component.svelte";
+  let { children, ...props } = $props();
 </script>
 
-
-<div class="{pfPrefix(className)}">
-  {text}
+<Component {...props} name="card__title">
   {@render children?.()}
-</div>
+</Component>

@@ -1,15 +1,8 @@
 <script lang='ts'>
-  import { pfPrefix } from "../helpers";
-  let {
-    className = 'page__sidebar',
-    text = '',
-    children,
-    ...props
-  } = $props();
+  import Component from "$lib/modules/Component.svelte";
+  let { children, ...props } = $props();
 </script>
 
-
-<div class="{pfPrefix(className)}">
-  {text}
+<Component {...props} name="page__sibebar">
   {@render children?.()}
-</div>
+</Component>

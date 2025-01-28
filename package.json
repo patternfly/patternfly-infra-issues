@@ -1,6 +1,6 @@
 {
 	"name": "PatternFlySvelte",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "vite dev",
 		"buildold": "vite build && npm run prepack",

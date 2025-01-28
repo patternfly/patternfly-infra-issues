@@ -11,6 +11,7 @@ export const GLOBAL_ALIASES = {
     '$utils': path.resolve('./src/lib/utils'),
     '$config': path.resolve('./src/config'),
     '$page': path.resolve('./src/lib/modules/page'),
+    '$images': path.resolve('./src/lib/images'),
 
     '$helpers': path.resolve('./src/lib/helpers'),
 

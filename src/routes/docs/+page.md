@@ -4,12 +4,13 @@ title: 'Crafting Flexible Componentry:'
 
 <script>
   import Alert from '$components/alert/Alert.svelte';
+  import visualComparison from '$images/visual-comparison.png';
 </script>
 
 <h1 class="pf-v6-c-title page-title">{title}</h1><br> A New Approach to UI Development
 
 <figure class="center pres">
-  <img src="./src/lib/images/visual-comparison.png" alt="A new approach to UI visual comparison" />
+  <img src="{visualComparison}" alt="A new approach to UI visual comparison" />
 </figure>
 
 <h2 class="pf-v6-c-title center">The Challenge of Component Design</h2>
@@ -125,31 +126,15 @@ Our approach reimagines components as living, breathing entities that:
 
 ### Key Technical Innovations
 
-1. **Dynamic State Management**
-   Imagine a component that can effortlessly toggle between states:
-   ```svelte
-   <Component
-     states={{
-       expanded: true,
-       disabled: false
-     }}
-     modifiers={{
-       primary: true
-     }}
-   >
-     Adaptive Content
-   </Component>
-   ```
+**Type-Safe Configuration**
+  - Strongly typed interfaces
+  - Compile-time type checking
+  - Predictable prop handling
 
-2. **Type-Safe Configuration**
-   - Strongly typed interfaces
-   - Compile-time type checking
-   - Predictable prop handling
-
-3. **Minimal Boilerplate**
-   - Single component definition
-   - Automatic class generation
-   - Intuitive state management
+**Minimal Boilerplate**
+  - Single component definition
+  - Automatic class generation
+  - Intuitive state management
 
 ### The Benefits Unpacked
 
@@ -189,14 +174,7 @@ This approach solves real problems:
 
 ```svelte
 <Component
-  name="alert"
-  states={{
-    expanded: isDetailVisible,
-    disabled: !isInteractive
-  }}
-  modifiers={{
-    warning: isImportant
-  }}
+  name="alert" as="div"
 >
   Dynamic Alert Content
 </Component>

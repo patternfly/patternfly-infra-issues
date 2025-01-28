@@ -1,16 +1,8 @@
 <script lang='ts'>
-  import { pfPrefix } from "../helpers";
-  let {
-    className = 'page__main-section',
-    isFilled = true,
-    text = '',
-    children,
-    ...props
-  } = $props();
+  import Component from "$lib/modules/Component.svelte";
+  let { children, ...props } = $props();
 </script>
 
-
-<section class="{pfPrefix(className)}" class:pf-m-fill={isFilled}>
-  {text}
+<Component {...props} name="page__main-section">
   {@render children?.()}
-</section>
+</Component>

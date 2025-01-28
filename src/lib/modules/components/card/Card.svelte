@@ -1,14 +1,6 @@
 <script lang='ts'>
-  // import { getSiblings } from '../helpers';
-  export const cardState = {
-  }
-
-  let {
-    className = 'card',
-    text = '',
-    children,
-    ...props
-  } = $props();
+  import Component from "$lib/modules/Component.svelte";
+  let { children, ...props } = $props();
 </script>
 
 <!-- this can be abstracted into a function -->
@@ -26,14 +18,10 @@
   {/if} -->
 {/snippet}
 
-
-
-<div class="{pfPrefix(className)}" class:pf-m-expanded={cardState.isExpanded}>
-
+<Component {...props} name="card">
   {#if props.cardTitle}
     <CardTitle {...props.cardTitle} />
   {/if}
 
-  {text}
   {@render children?.()}
-</div>
+</Component>
