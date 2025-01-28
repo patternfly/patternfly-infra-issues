@@ -1,0 +1,7 @@
+svelte
+
+vite
+
+playwright
+
+mdsvex
