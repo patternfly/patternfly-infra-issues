@@ -1,14 +1,14 @@
 # Svelte Findings
-
+  
 ## Template System Migration Guide: From Handlebars to SvelteKit
-
+  
 ### Top-level Summary
 Think of this like replacing a monolithic templating engine with microservices - while the system is still running. We're migrating from Handlebars to SvelteKit, but instead of a risky big-bang migration, we're taking the strangler fig pattern approach. The old system keeps running while we gradually wrap new functionality around it.
-
+  
 # 2024.stateofjs.com
-
+  
 ## Libraries Experience & Sentiment
-
+  
 <a href="2024.stateofjs.com" target="_blank">
 <img src="https://github.com/user-attachments/assets/472ff0ee-f981-4901-9db3-a36054be64e3" alt="state of JS framework sentiment" />
 </a>
