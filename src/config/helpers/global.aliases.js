@@ -9,9 +9,9 @@ export const GLOBAL_ALIASES = {
     '$hbs': path.resolve('./src/lib/modules/hbs'),
     '$layouts': path.resolve('./src/lib/modules/layouts'),
     '$utils': path.resolve('./src/lib/utils'),
-    '$config': path.resolve('./src/config'),
     '$page': path.resolve('./src/lib/modules/page'),
     '$images': path.resolve('./src/lib/images'),
+    '$config': path.resolve('./src/config'),
 
     '$helpers': path.resolve('./src/lib/helpers'),
 

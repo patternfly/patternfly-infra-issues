@@ -3,7 +3,8 @@
   import PageHeader from '$lib/page/PageHeader.svelte';
   import { Page, PageMain, PageMainBody, PageMainSection, PageSidebar, PageSidebarBody, PageMainContainer } from '$components/page';
   import './md.scss';
-  import '$patternfly/patternfly.scss';
+  import '$lib/patternfly/patternfly.scss';
+
   import './workspace.scss';
 
   // Define our props using runes syntax
@@ -28,7 +29,9 @@
     <PageMain>
       <PageMainSection isFilled=true>
         <PageMainBody>
-          {@render children?.()}
+          <div class="pf-v6-c-content">
+            {@render children?.()}
+          </div>
         </PageMainBody>
       </PageMainSection>
     </PageMain>

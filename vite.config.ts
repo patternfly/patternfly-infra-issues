@@ -16,6 +16,13 @@ export default defineConfig({
 		sveltekit(),
 		// rollupPlugin()
 	],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler' // or "modern"
+      }
+    }
+  },
 	server: {
 		fs: {
 			allow: ['./src']

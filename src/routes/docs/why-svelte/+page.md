@@ -35,13 +35,13 @@ Our migration uses three key mechanisms to manage the transition from Handlebars
 
 1. Routes - maintains the same URL structure while the underlying implementation changes
    ```
-   /components/alert  →  Choose Implementation
+   /components/alert →  Choose Implementation
    /modules/alert    →  Choose Implementation
    ```
 
 2. Aliases - provides flexibility to point to either implementation
    ```
-   $component/alert  →  Svelte Component
+   $component/alert →  Svelte Component
                     →  Handlebars Template
    ```
 

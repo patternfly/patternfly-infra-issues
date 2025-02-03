@@ -1,24 +1,46 @@
-/dist/
-**/node_modules/
-.sass-cache/
-/.vscode/
-/.cache/
-/build/
-/public/
-/tmp/
-/src/icons/**/*.svg
+bun.lockb
+yarn.lock
+
+.svelte-kit/
+build/
+node_modules/
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
 .DS_Store
-.blueprints
-npm-debug.log
-yarn-error.log
-package-lock.json
-/.idea
-/coverage/
-*.swp
-/workspace/
-/assets/
-/scripts/sizeReport/package-lock.json
-/scripts/sizeReport/report.html
-.history
-.svelte-kit
-build
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+

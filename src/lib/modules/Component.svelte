@@ -4,9 +4,9 @@
   let {
     as = 'div',
     name = 'component',
-    states = {},
-    modifiers = {},
-    classList = [],
+    states = String || [] || {},
+    modifiers = String || [],
+    classList = String || [],
     children,
     ...restProps
   } = $props<ComponentProps>();

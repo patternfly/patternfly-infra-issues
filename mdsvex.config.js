@@ -7,7 +7,6 @@ const config = defineConfig({
     // This runs before mdsvex processes markdown
     () => (tree) => {
       // Initialize Handlebars here
-      console.log('Handlebars initialized');
       return tree;
     }
   ],

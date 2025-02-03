@@ -54,9 +54,13 @@ export interface Diagnostic {
   hint?: string;
 }
 
+export interface ComponentProps {
+  [key: string]: unknown;
+}
+
 // Handlebars specific types
 export interface HandlebarsContext {
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export interface TemplateMap {
