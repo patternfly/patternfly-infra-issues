@@ -1,0 +1,1 @@
+import { ComponentProps } from '$types';

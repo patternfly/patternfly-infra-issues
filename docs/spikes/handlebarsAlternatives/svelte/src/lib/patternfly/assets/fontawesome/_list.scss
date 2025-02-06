@@ -1,0 +1,20 @@
+// List icons
+// -------------------------
+@use './variables' as *;
+@use 'sass:math';
+
+.#{$fa-css-prefix}-ul {
+  padding-inline-start: 0;
+  margin-inline-start: math.div($fa-li-width * 5, 4);
+  list-style-type: none;
+
+  > li { position: relative; }
+}
+
+.#{$fa-css-prefix}-li {
+  position: absolute;
+  inset-inline-start: -#{$fa-li-width};
+  width: $fa-li-width;
+  line-height: inherit;
+  text-align: center;
+}

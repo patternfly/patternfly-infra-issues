@@ -1,0 +1,53 @@
+:root {
+    --pf-v6-c-content--FontSize: 18px;
+}
+.pf-v6-c-title.page-title {
+  font-size: 3rem;
+}
+
+.pf-v6-c-content {
+
+  h1, h2, h3, h4 {
+    --pf-t--global--font--size--sm: 2rem;
+  }
+}
+
+h2.pf-v6-c-title {
+  font-size: 2.3rem;
+}
+
+.display {
+  font-size: 2rem;
+}
+
+.pf-v6-c-title {
+  font-size: 2.3rem;
+  padding: 2rem 0 5rem;
+}
+
+.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.pres {
+  padding: 4rem 0;
+}
+
+.summary {
+  font-size: 28px;
+  max-width: 800px;
+}
+
+.pf-v6-c-page__main-section {
+  display: grid;
+  padding: 6rem 8rem 4rem;
+}
+
+.pf-v6-c-title {
+  padding: 0;
+}
+
+.pf-v6-c-page__main-body {
+  max-width: 1200px;
+}

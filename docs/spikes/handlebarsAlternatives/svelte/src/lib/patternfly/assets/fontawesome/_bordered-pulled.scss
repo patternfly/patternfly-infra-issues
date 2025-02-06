@@ -1,0 +1,22 @@
+// Bordered & pulled
+// -------------------------
+@use './variables' as *;
+
+.#{$fa-css-prefix}-border {
+  padding-block: .2em .15em;
+  padding-inline: .25em;
+  border: solid .08em $fa-border-color;
+  border-radius: .1em;
+}
+
+.#{$fa-css-prefix}-pull-left { float: inline-start; }
+.#{$fa-css-prefix}-pull-right { float: inline-end; }
+
+.#{$fa-css-prefix},
+.fas,
+.far,
+.fal,
+.fab {
+  &.#{$fa-css-prefix}-pull-left { margin-inline-end: .3em; }
+  &.#{$fa-css-prefix}-pull-right { margin-inline-start: .3em; }
+}
