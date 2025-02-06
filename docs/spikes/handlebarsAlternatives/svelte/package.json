@@ -1,0 +1,84 @@
+{
+	"name": "PatternFlySvelte",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "vite dev",
+		"buildold": "vite build && npm run prepack",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepack": "svelte-kit sync && svelte-package && publint",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint .",
+		"lint:sass:fix": "stylelint **/*.scss --fix",
+		"lint:sass": "stylelint 'src/**/*.scss'",
+		"lint:js": "eslint ."
+	},
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*"
+	],
+	"sideEffects": [
+		"**/*.css"
+	],
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
+		}
+	},
+	"prepare": "svelte-kit sync",
+	"peerDependencies": {
+		"svelte": "^5.0.0"
+	},
+	"devDependencies": {
+		"@eslint/compat": "^1.2.5",
+		"@eslint/js": "^9.18.0",
+		"@sveltejs/adapter-node": "^5.2.11",
+		"@sveltejs/adapter-static": "^3.0.8",
+		"@sveltejs/kit": "^2.16.1",
+		"@sveltejs/package": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.0",
+		"@types/glob": "^8.1.0",
+		"@types/node": "^22.10.7",
+		"case-anything": "^3.1.0",
+		"eslint": "^9.18.0",
+		"eslint-config-prettier": "^10.0.1",
+		"eslint-plugin-svelte": "^2.46.1",
+		"globals": "^15.14.0",
+		"handlebars": "^4.7.8",
+		"marked": "^15.0.6",
+		"mdsvex": "^0.12.3",
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.3",
+		"publint": "^0.3.2",
+		"sass": "^1.83.4",
+		"stylelint": "^16.13.2",
+		"stylelint-config-prettier": "^9.0.5",
+		"stylelint-config-recess-order": "^6.0.0",
+		"stylelint-config-recommended": "^15.0.0",
+		"stylelint-config-standard": "^37.0.0",
+		"stylelint-config-standard-scss": "^14.0.0",
+		"stylelint-order": "^6.0.4",
+		"stylelint-use-logical-spec": "^5.0.1",
+		"svelte": "^5.0.0",
+		"svelte-check": "^4.0.0",
+		"typescript": "^5.0.0",
+		"typescript-eslint": "^8.20.0",
+		"vite": "^5.4.11",
+		"vite-plugin-handlebars": "^2.0.0",
+		"vite-plugin-markdown": "^2.2.0"
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+	"dependencies": {
+		"@starptech/prettyhtml": "^0.10.0",
+		"@sveltejs/adapter-auto": "^4.0.0",
+		"path": "^0.12.7",
+		"rollup": "^4.32.0"
+	}
+}
