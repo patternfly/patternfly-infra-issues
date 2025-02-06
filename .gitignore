@@ -2,7 +2,7 @@ bun.lockb
 yarn.lock
 
 .svelte-kit/
-build/
+build/_app
 node_modules/
 
 */.DS_Store
