@@ -1,0 +1,1 @@
+import"../chunks/Bg9kRutz.js";import"../chunks/69_IOA4Y.js";import{t as p,b as a}from"../chunks/Bxzg7UnF.js";const e={title:"API"},{title:n}=e;var m=p("<p></p>");function c(o){var t=m();t.textContent=n,a(o,t)}export{c as component};

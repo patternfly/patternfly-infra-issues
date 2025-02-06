@@ -1,0 +1,1 @@
+import"../chunks/Bg9kRutz.js";import"../chunks/69_IOA4Y.js";import{t as o,b as a}from"../chunks/Bxzg7UnF.js";const m={title:"Success metrics"},{title:n}=m;var p=o("<h1></h1>");function i(e){var t=p();t.textContent=n,a(e,t)}export{i as component};
