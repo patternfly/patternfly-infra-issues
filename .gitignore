@@ -2,7 +2,8 @@ bun.lockb
 yarn.lock
 
 .svelte-kit/
-# build/ including build here for review purposes
+# including build here for review purposes
+build/_app
 node_modules/
 
 */.DS_Store
